@@ -1,8 +1,13 @@
 # Bare config
-bare: make_neovim make_zsh make_git done
+bare: make_nvm make_neovim make_zsh make_git done
 
 # Full install
 full: bare lang
+
+make_nvm:
+	@echo ""; echo ""
+	@echo "> Configuring nvm..."
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 make_neovim:
 	@echo ""; echo ""
