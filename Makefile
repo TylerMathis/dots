@@ -27,17 +27,17 @@ lang: cpp python typescript
 cpp:
 	@echo ""; echo ""
 	@echo "> Configuring C++ language support for neovim..."
-	nvim +"CocInstall coc-clangd" +qa
+	nvim +"CocInstall coc-clangd"
 
 python:
 	@echo ""; echo ""
 	@echo "> Configuring python language support for neovim..."
-	nvim +"CocInstall coc-pyright" +qa
+	nvim +"CocInstall coc-pyright"
 
 typescript:
 	@echo ""; echo ""
 	@echo "> Configuring typescript language support for neovim..."
-	nvim +"CocInstall coc-tss" +qa
+	nvim +"CocInstall coc-tsserver"
 
 
 
