@@ -1,5 +1,5 @@
 # Bare config
-bare: make_neovim make_zsh done
+bare: make_neovim make_zsh make_git done
 
 # Full install
 full: bare lang
@@ -18,6 +18,12 @@ make_zsh:
 	cp ./zsh/zshrc ${HOME}/.zshrc
 	mkdir -p ${HOME}/.oh-my-zsh/custom
 	cp ./zsh/custom.zsh ${HOME}/.oh-my-zsh/custom
+
+make_git:
+	@echo ""; echo ""
+	@echo "> Configuring git identity..."
+	git config --global user.name "Tyler Hostler-Mathis"
+	git config --global user.email "tylerhm.dev@gmail.com"
 
 
 
