@@ -11,8 +11,11 @@ lg()
     fi
 }
 
+# pip libraries
+export PATH="$PATH:$HOME/.local/bin"
+
 # thefuck
-if ! command -v thefuck &> /dev/null
+if (( $+commands[thefuck] ))
 then
     eval $(thefuck --alias)
 fi
