@@ -1,10 +1,14 @@
 # dots
-Dotfiles for my custom config
+Tyler Hostler-Mathis's dotfiles
 
-# Usage
-All dotfiles can be installed with the provided Makefile
+## Usage
 
-`make`
+```sh
+make
+```
+Standard dotfiles
 
-Dotfiles will go to their default locations on a linux system.
-Install scripts will install necessary plugin managers
+```sh
+make cp
+```
+Swaps out standard Neovim config for a competitive programming centralized version.
