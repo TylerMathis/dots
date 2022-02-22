@@ -81,6 +81,12 @@ nnoremap gf :vert winc f<CR>
 " Copy current filepath to clipboard
 nnoremap <silent> yf :let @+=expand('%:p')<CR>
 
+" Toggle NERDTree
+nnoremap <C-f> :NERDTreeToggle<CR>
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 " Use tab for trigger completion with characters ahead and navigate.
 let g:UltiSnipsExpandTrigger="<Nop>"
 inoremap <silent><expr> <TAB>
