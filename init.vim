@@ -53,11 +53,9 @@ colorscheme dracula
 set splitright
 set splitbelow
 
-" move split panes to left/bottom/top/right
-nnoremap <A-h> <C-W>H
-nnoremap <A-j> <C-W>J
-nnoremap <A-k> <C-W>K
-nnoremap <A-l> <C-W>L
+" Simulate VSCode alt-up-down behavior
+nnoremap <A-k> ddkkp
+nnoremap <A-j> ddp
 
 " Move between panes to left/bottom/top/right
 nnoremap <C-h> <C-w>h
