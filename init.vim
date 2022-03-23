@@ -8,6 +8,7 @@ call plug#begin()
     Plug 'preservim/nerdcommenter'
     Plug 'mhinz/vim-startify'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'wakatime/vim-wakatime'
 
 call plug#end()
 
@@ -28,7 +29,6 @@ set incsearch
 " Tabs
 set tabstop=4
 set softtabstop=4
-set expandtab
 set shiftwidth=4
 set autoindent
 filetype plugin indent on
@@ -36,7 +36,7 @@ filetype plugin on
 
 " Vis
 syntax on
-set relativenumber
+set number relativenumber
 set wildmode=longest,list
 set cc=80
 set cursorline
